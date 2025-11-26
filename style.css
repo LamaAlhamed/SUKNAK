@@ -1071,6 +1071,80 @@ nav a.active::after {
 	.c-skill { width:300px; }
 	.c-edu   { width:300px; }
 
+
+
+ @media (max-width: 768px) {
+
+  
+  .about-strip {
+    padding: 8px;
+    gap: 12px;
+  }
+
+  .about-card {
+    flex: 0 0 75vw;       
+  .profile-card {
+    max-width: 100%;
+    margin: 10px 10px 0;
+    padding: 14px;
+  }
+
+  
+  .profile-card .profile-matrix {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+ 
+  .profile-matrix th,
+  .profile-matrix td {
+    padding: 8px 6px;
+    font-size: 13px;
+  }
+
+
+  .photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  
+  .v-name,
+  .v-photo,
+  .v-dob,
+  .v-email,
+  .c-area,
+  .c-skill,
+  .c-edu {
+    width: auto;
+  }
+}
+
+    max-width: 280px;
+    height: auto;
+    padding: 10px 12px;
+  }
+
+  .about-card img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .about-name {
+    font-size: 14px;
+  }
+
+  .member-role {
+    font-size: 12px;
+  }
+
+  .staff-box {
+    max-width: 100%;
+    margin: 15px 10px;
+    padding: 12px;
+  }
+
 	  
 /* Home Page */
 
@@ -2113,57 +2187,4 @@ body.dark-theme .added-request-box {
 
 .user-pages footer {
     margin-top: 0 !important;
-}
-
-
-
-@media (max-width: 768px) {
-
- 
-  .top-header {
-    flex-direction: column;      
-    gap: 10px;
-    padding: 8px 16px;
-  }
-
-  .top-header img.logo,
-  .top-header img.logoTitle {
-    max-width: 140px;
-    height: auto;
-  }
-
- 
-  nav ul {
-    flex-direction: column;
-    gap: 8px;
-    padding: 8px 0;
-  }
-
-
-  .home-services-grid {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .home-service-card {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .services-grid,
-  .staff-grid,
-  .provider-service-grid {
-    grid-template-columns: 1fr;  
-  }
-
-
-  .profile-card {
-    max-width: 100%;
-  }
-
-
-  fieldset.about-form,
-  form.about-form {
-    grid-template-columns: 1fr;
-  }
 }
